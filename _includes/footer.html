@@ -16,29 +16,43 @@
     <script type="text/javascript"
     src="https://www.cambridge.org/packages/cambridge_themes/javascripts/global_navbar/latest.js"></script>
     <script type="text/javascript">
-        globalNav(
-            '//www.cambridge.org/tools/packages/cambridge_themes/global_navigation/latest',
-            {},
-            function(resp) {
-                jQuery('#global-nav').html(resp);
-                responsiveNavOnloadCallback();
-            },
-            'html',
-            5000
-        );
+        const globalNavHtml = localStorage.getItem('globalNavHtml');
+        if (globalNavHtml == null) {
+            globalNav(
+                '//www.cambridge.org/tools/packages/cambridge_themes/global_navigation/latest',
+                {},
+                function(resp) {
+                    localStorage.setItem('globalNavHtml', resp);
+                    jQuery('#global-nav').html(resp);
+                    responsiveNavOnloadCallback();
+                },
+                'html',
+                5000
+            );
+        } else {
+            jQuery('#global-nav').html(globalNavHtml);
+            responsiveNavOnloadCallback();
+        }
     </script>
     <script type="text/javascript"
     src="https://www.cambridge.org/packages/cambridge_themes/javascripts/global_footer/latest.js"></script>
     <script type="text/javascript">
-        globalFooter(
+        const globalFooterHtml = localStorage.getItem('globalFooterHtml');
+        if (globalFooterHtml == null) {
+            globalFooter(
                 '//www.cambridge.org/tools/packages/cambridge_themes/global_footer/latest',
                 {},
                 function(resp) {
+                    localStorage.setItem('globalFooterHtml', resp);
                     jQuery('#global-foot').html(resp);
-            },
+                },
                 'html',
-            5000
-        );
+                5000
+            );
+        } else {
+            jQuery('#global-foot').html(globalFooterHtml);
+        }
+
     </script>
 </body>
 </html>

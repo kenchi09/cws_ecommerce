@@ -1,3 +1,50 @@
 main.body {
     min-height: 50vh;
 }
+
+.page-header-wrapper {
+    background-color: #f2f2f2;
+}
+
+.steps-wrapper .btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.cart-cta > div {
+    background-color: #f2f2f2;
+}
+
+.cart-items .list-header {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #555;
+}
+
+.cart-items .divider {
+    border-bottom: 1px solid #777;
+    margin-bottom: 0.5rem;
+}
+
+.cart-items .title-details,
+.cart-items .item-options {
+    font-size: 80%;
+}
+
+.cart-items .title-details {
+    margin-bottom: 0.5rem;
+}
+
+.cart-items .item-options a {
+    text-decoration: none;
+}
+
+.cart-items .unit-price {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart-items .qty-ctrl .form-control {
+    width: 75%;
+    margin-left: 12.5%;
+}
