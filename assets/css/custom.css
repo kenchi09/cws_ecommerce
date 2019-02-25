@@ -2,6 +2,14 @@ main.body {
     min-height: 50vh;
 }
 
+.banner {
+    height: 119px;
+    background-image: url('../../assets/img/background-header.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .page-header-wrapper {
     background-color: #f2f2f2;
 }
@@ -47,4 +55,60 @@ main.body {
 .cart-items .qty-ctrl .form-control {
     width: 75%;
     margin-left: 12.5%;
+}
+
+.shipping-address-list .border {
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.shipping-address-list .border.border-success {
+    border-width: 2px !important;
+}
+
+.shipping-address-list .card,
+.billing-address-list .card {
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.shipping-address-list .card-body,
+.billing-address-list .card-body {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+}
+
+.shipping-address-list .address-details,
+.billing-address-list .address-details {
+    margin-bottom: 0px;
+    font-size: 80%;
+}
+
+.shipping-address-list .card-body:hover,
+.billing-address-list .card-body:hover {
+    cursor: pointer;
+}
+
+.shipping-address-list .card-body.selected,
+.billing-address-list .card-body.selected {
+    border: 2px solid #28a745;
+}
+
+.shipping-address-list .card-footer,
+.billing-address-list .card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+.shipping-address-list .card-footer button,
+.billing-address-list .card-footer button {
+    width: 25%;
+    border: 1px solid #dee2e6!important;
+}
+
+#btnAddNewAddress {
+    width: 50%;
+    border: 1px solid #dee2e6!important;
 }
