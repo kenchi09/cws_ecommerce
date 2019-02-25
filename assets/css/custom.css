@@ -112,3 +112,15 @@ main.body {
     width: 50%;
     border: 1px solid #dee2e6!important;
 }
+
+.shipping-method-wrapper {
+    background-color: #f2f2f2;
+}
+
+.shipping-method label {
+    line-height: 1.25;
+}
+
+.shipping-method label p {
+    margin-bottom: 0.25rem;
+}
