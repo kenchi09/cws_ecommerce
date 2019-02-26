@@ -7,4 +7,6 @@ $(function () {
     $('#billToSameAddress').change(function () {
         $('.billing-address-list').toggleClass('d-none');
     });
+
+    $('.fa-question-circle').tooltip();
 });

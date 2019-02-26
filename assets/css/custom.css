@@ -10,17 +10,16 @@ main.body {
     background-repeat: no-repeat;
 }
 
-.page-header-wrapper {
+.page-header-wrapper,
+.cart-cta > div,
+.shipping-method-wrapper,
+.order-totals {
     background-color: #f2f2f2;
 }
 
 .steps-wrapper .btn {
     padding-left: 3rem;
     padding-right: 3rem;
-}
-
-.cart-cta > div {
-    background-color: #f2f2f2;
 }
 
 .cart-items .list-header {
@@ -115,10 +114,6 @@ main.body {
     border: 1px solid #dee2e6!important;
 }
 
-.shipping-method-wrapper {
-    background-color: #f2f2f2;
-}
-
 .shipping-method label {
     line-height: 1.25;
 }
@@ -137,4 +132,12 @@ main.body {
 
 .selected-address-list .btn {
     border: 1px solid #dee2e6!important;
+}
+
+.promo-code-wrapper .form-group {
+    margin-bottom: 0;
+}
+
+#btnApplyPromoCode {
+    border: 1px solid #ced4da;
 }
