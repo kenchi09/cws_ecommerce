@@ -1,5 +1,5 @@
 main.body {
-    min-height: 50vh;
+    min-height: 70vh;
 }
 
 .banner {
@@ -67,7 +67,8 @@ main.body {
 }
 
 .shipping-address-list .card,
-.billing-address-list .card {
+.billing-address-list .card,
+.selected-address-list .card {
     -ms-flex: 0 0 45%;
     flex: 0 0 45%;
     margin-bottom: 20px;
@@ -97,7 +98,8 @@ main.body {
 }
 
 .shipping-address-list .card-footer,
-.billing-address-list .card-footer {
+.billing-address-list .card-footer,
+.selected-address-list .card-footer {
     background-color: transparent;
     border-top: none;
 }
@@ -123,4 +125,16 @@ main.body {
 
 .shipping-method label p {
     margin-bottom: 0.25rem;
+}
+
+.selected-address-list .card-body {
+    padding-bottom: 0;
+}
+
+.selected-address-list .address-details {
+    font-size: 80%;
+}
+
+.selected-address-list .btn {
+    border: 1px solid #dee2e6!important;
 }

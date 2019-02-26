@@ -6,6 +6,69 @@ title: Confirm order
 
 {% include page-ribbon.html %}
 
+<div class="steps-wrapper mb-lg-5">
+    <div class="container">
+        <div class="col-sm-12 text-center">
+            <div class="btn-group" role="group">
+                <a href="#" class="btn btn-light disabled">
+                    <i class="fa fa-check green"></i>&nbsp;&nbsp;Sign in
+                </a>
+                <a href="#" class="btn btn-light disabled border-left">
+                    <i class="fa fa-check green"></i>&nbsp;&nbsp;Shipping
+                </a>
+                <a href="#" class="btn btn-primary active border-left">Confirm</a>
+            </div>
+        </div>
+    </div>
+</div>
 
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-8">
+                <div class="border rounded selected-address-list px-4">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="h5">Shipping address</p>
+                                <strong>John Doe</strong>
+                                <p class="address-details">
+                                    <span>64 Hounslow Road</span><br>
+                                    <span>DN14 2YP</span><br>
+                                    <span>London</span><br>
+                                    <span>United Kingdom</span><br>
+                                    <span>077 7040 6356</span>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/shipping" class="btn btn-light btn-sm">Change</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="h5">Billing address</p>
+                                <strong>John Doe</strong>
+                                <p class="address-details">
+                                    <span>4589 Hillcrest Drive</span><br>
+                                    <span>98408</span><br>
+                                    <span>Tacoma</span><br>
+                                    <span>Washington</span><br>
+                                    <span>United States</span><br>
+                                    <span>253-471-0859</span>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/shipping" class="btn btn-light btn-sm">Change</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to action -->
+            <div class="col-sm-12 col-lg-4"></div>
+        </div>
+    </div>
+</div>
 
 {% include footer.html %}
