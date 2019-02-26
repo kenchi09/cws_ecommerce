@@ -30,17 +30,24 @@ main.body {
 
 .cart-items .divider {
     border-bottom: 1px solid #777;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .cart-items .title-details,
 .cart-items .item-options,
-.selected-address-list .address-details,
-.order-totals .t-and-c {
+.order-totals .t-and-c,
+.sap-items .title-details,
+.sap-items .item-options {
     font-size: 80%;
 }
 
-.cart-items .title-details {
+.cart-items .item-options,
+.sap-items .item-options {
+    margin-bottom: 0;
+}
+
+.cart-items .title-details,
+.sap-items .title-details {
     margin-bottom: 0.5rem;
 }
 
@@ -72,7 +79,7 @@ main.body {
 .selected-address-list .card {
     -ms-flex: 0 0 45%;
     flex: 0 0 45%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: none;
 }
 
@@ -83,7 +90,8 @@ main.body {
 }
 
 .shipping-address-list .address-details,
-.billing-address-list .address-details {
+.billing-address-list .address-details,
+.selected-address-list .address-details {
     margin-bottom: 0px;
     font-size: 80%;
 }
@@ -154,4 +162,24 @@ main.body {
 .cart-items .subtotal,
 .order-totals .grand-total {
     color: #ad1f2d;
+}
+
+.sap-items .item-group {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #dee2e6!important;
+}
+
+.sap-items .item-group h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.sap-items #partiallyAvailable {
+    background-color: #f2f2f2;
+}
+
+.sap-items #marketRestricted,
+.sap-items #unavailable {
+    background-color: #bfbfbf;
 }

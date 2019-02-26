@@ -26,8 +26,8 @@ title: Confirm order
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-8">
-                <div class="border rounded selected-address-list px-4">
-                    <div class="card-deck">
+                <div class="selected-address-list px-4 mb-4">
+                    <div class="card-deck border rounded">
                         <div class="card">
                             <div class="card-body">
                                 <h2 class="h5">Shipping address</h2>
@@ -41,7 +41,7 @@ title: Confirm order
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <a href="/shipping" class="btn btn-light btn-sm">Change</a>
+                                <a href="shipping" class="btn btn-light btn-sm">Change</a>
                             </div>
                         </div>
                         <div class="card">
@@ -58,15 +58,216 @@ title: Confirm order
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <a href="/shipping" class="btn btn-light btn-sm">Change</a>
+                                <a href="shipping" class="btn btn-light btn-sm">Change</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="px-4 sap-items">
+                    <h2 class="h3 mb-4">Cart items</h2>
+                    <div class="item-group">
+                        <h3>Available</h3>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <img src="https://assets.cambridge.org/97813166/04724/cover/9781316604724.jpg" class="img-thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="h5 font-weight-bold mb-2">
+                                            <a href="#" class="text-decoration-none">
+                                                Birthright Citizens
+                                            </a>
+                                        </p>
+                                        <p class="title-details">
+                                            <span>Jones</span><br>
+                                            <span>Paperback</span><br>
+                                            <span>9781316604724</span>
+                                        </p>
+                                        <p class="item-options">
+                                            <a href="#">
+                                                <i class="fa fa-times"></i>&nbsp;&nbsp;Remove
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 unit-price">
+                                <p><span>&pound;37.00</span></p>
+                            </div>
+                            <div class="col-2 qty-ctrl">
+                                <input type="number" min="1" value="1" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-group">
+                        <h3>
+                            Pre-order&nbsp;
+                            <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right"
+                            title="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></i>
+                        </h3>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <img src="https://assets.cambridge.org/97811084/76423/cover/9781108476423.jpg" class="img-thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="h5 font-weight-bold mb-2">
+                                            <a href="#" class="text-decoration-none">
+                                                The Cause of Humanity and Other Stories
+                                            </a>
+                                        </p>
+                                        <p class="title-details">
+                                            <span>Kipling et al.</span><br>
+                                            <span>Hardback</span><br>
+                                            <span>9781108476423</span>
+                                        </p>
+                                        <p class="item-options">
+                                            <a href="#">
+                                                <i class="fa fa-times"></i>&nbsp;&nbsp;Remove
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 unit-price">
+                                <p><span>&pound;27.99</span></p>
+                            </div>
+                            <div class="col-2 qty-ctrl">
+                                <input type="number" min="1" value="1" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-group" id="partiallyAvailable">
+                        <h3>
+                            Partially available&nbsp;
+                            <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right"
+                            title="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."></i>
+                        </h3>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <img src="https://assets.cambridge.org/97811084/39589/cover/9781108439589.jpg" class="img-thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="h5 font-weight-bold mb-2">
+                                            <a href="#" class="text-decoration-none">
+                                                There Is No Planet B
+                                            </a>
+                                        </p>
+                                        <p class="title-details">
+                                            <span>Berners-Lee</span><br>
+                                            <span>Paperback</span><br>
+                                            <span>9781108439589</span>
+                                        </p>
+                                        <p class="item-options">
+                                            <a href="#">
+                                                <i class="fa fa-times"></i>&nbsp;&nbsp;Remove
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 unit-price">
+                                <p><span>&pound;9.99</span></p>
+                            </div>
+                            <div class="col-2 qty-ctrl">
+                                <input type="number" min="1" value="1" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-group" id="marketRestricted">
+                        <h3>
+                            Market-restricted&nbsp;
+                            <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right"
+                            title="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></i>
+                        </h3>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <img src="https://assets.cambridge.org/97811084/68602/cover/9781108468602.jpg" class="img-thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="h5 font-weight-bold mb-2">
+                                            <a href="#" class="text-decoration-none">
+                                                White Identity Politics
+                                            </a>
+                                        </p>
+                                        <p class="title-details">
+                                            <span>Jardina</span><br>
+                                            <span>Paperback</span><br>
+                                            <span>9781108468602</span>
+                                        </p>
+                                        <p class="item-options">
+                                            <a href="#">
+                                                <i class="fa fa-times"></i>&nbsp;&nbsp;Remove
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 unit-price">
+                                <!-- <p><span>&pound;18.99</span></p> -->
+                                &nbsp;
+                            </div>
+                            <div class="col-2 qty-ctrl">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="item-group" id="unavailable">
+                        <h3>
+                            Unavailable&nbsp;
+                            <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right"
+                            title="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></i>
+                        </h3>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#">
+                                            <img src="https://assets.cambridge.org/97811070/30954/cover/9781107030954.jpg" class="img-thumbnail">
+                                        </a>
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="h5 font-weight-bold mb-2">
+                                            <a href="#" class="text-decoration-none">
+                                                Fighting the People's War
+                                            </a>
+                                        </p>
+                                        <p class="title-details">
+                                            <span>Fennell</span><br>
+                                            <span>Hardback</span><br>
+                                            <span>9781107030954</span>
+                                        </p>
+                                        <p class="item-options">
+                                            <a href="#">
+                                                <i class="fa fa-times"></i>&nbsp;&nbsp;Remove
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 unit-price">
+                                <!-- <p><span>&pound;25.00</span></p> -->
+                                &nbsp;
+                            </div>
+                            <div class="col-2 qty-ctrl">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Call to action -->
             <div class="col-sm-12 col-lg-4">
                 <div class="border rounded promo-code-wrapper p-4 mb-lg-4">
                     <form>
