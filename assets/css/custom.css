@@ -34,7 +34,9 @@ main.body {
 }
 
 .cart-items .title-details,
-.cart-items .item-options {
+.cart-items .item-options,
+.selected-address-list .address-details,
+.order-totals .t-and-c {
     font-size: 80%;
 }
 
@@ -126,10 +128,6 @@ main.body {
     padding-bottom: 0;
 }
 
-.selected-address-list .address-details {
-    font-size: 80%;
-}
-
 .selected-address-list .btn {
     border: 1px solid #dee2e6!important;
 }
@@ -140,4 +138,20 @@ main.body {
 
 #btnApplyPromoCode {
     border: 1px solid #ced4da;
+}
+
+.order-totals .amt-breakdown p {
+    margin-bottom: 0;
+}
+
+.order-totals .grand-total {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cart-cta .subtotal,
+.cart-items .subtotal,
+.order-totals .grand-total {
+    color: #ad1f2d;
 }

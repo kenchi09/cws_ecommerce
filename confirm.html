@@ -30,7 +30,7 @@ title: Confirm order
                     <div class="card-deck">
                         <div class="card">
                             <div class="card-body">
-                                <p class="h5">Shipping address</p>
+                                <h2 class="h5">Shipping address</h2>
                                 <strong>John Doe</strong>
                                 <p class="address-details">
                                     <span>64 Hounslow Road</span><br>
@@ -46,7 +46,7 @@ title: Confirm order
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <p class="h5">Billing address</p>
+                                <h2 class="h5">Billing address</h2>
                                 <strong>John Doe</strong>
                                 <p class="address-details">
                                     <span>4589 Hillcrest Drive</span><br>
@@ -86,7 +86,31 @@ title: Confirm order
                 </div>
 
                 <div class="border rounded order-totals p-4">
-
+                    <h2 class="h5 mb-3">Order summary</h2>
+                    <div class="row amt-breakdown">
+                        <div class="col-sm-8">
+                            <p>Subtotal:</p>
+                            <p>Tax:</p>
+                            <p>Shipping:</p>
+                        </div>
+                        <div class="col-sm-4 text-right">
+                            <p>&pound;64.99</p>
+                            <p>&pound;6.50</p>
+                            <p>&pound;3.50</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row grand-total">
+                        <div class="col-sm-8">Grand total:</div>
+                        <div class="col-sm-4 text-right">&pound;74.99</div>
+                    </div>
+                    <div class="form-check custom-control custom-checkbox t-and-c mb-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">
+                            I agree to the Cambridge University Press <a href="#" class="">terms and conditions</a>.
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-block">Submit order</button>
                 </div>
             </div>
         </div>
